@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry} % manage page dimensions
+\usepackage[utf8]{inputenc} % utf-8 encoding
+\usepackage[italian]{babel} % italian default text
+
+\usepackage{import} % import other .tex files
+\usepackage{fancyhdr} % custom header and footer
+\usepackage[hidelinks]{hyperref} % link references
+\usepackage{bookmark} % better references
+
+\usepackage{amsmath, amssymb, amsthm} % math
+\usepackage{siunitx} % SI unit
+\usepackage{tabularx, booktabs, multirow, longtable} % table enhance
+\usepackage{caption, subcaption, graphicx} % figure enhance
+
+\title{Laboratorio di Fisica - Esperienza di Elettrostatica}
+\author{Vittorio Strano, Arianna Genuardi, Florinda Tesi, Antonio Riolo, Matteo Romano}
+\date{\today}
+
+\begin{document}
+    \maketitle
+
+    \tableofcontents
+
+    \newpage
+    \normalsize
+    \pagenumbering{arabic}
+    
+    %qui vanno messe le sezioni, nella forma
+    
+    \section{Introduzione}
+    \input{Chapters/Introduzione.tex} 
+    
+    \section{Metodi sperimentali}
+    \subsection{Strumentazione}
+    \input{Chapters/Strumentazione.tex} 
+    \subsection{Procedimento Capacità Elettrometro}
+    \subsection{Procedimento Parte I}
+    \subsection{Procedimento Parte II}
+    \subsection{Procedimento Parte III}
+    \subsection{Procedimento Parte IV}
+    
+    %\input{Chapters/Strumentazione.tex}
+    \section{Risultati}
+    \subsection{Risultati Capacità Elettrometro}
+    \subsection{Risultati Parte I}
+    \subsection{Risultati Parte II}
+    \subsection{Risultati Parte III}
+    \subsection{Risultati Parte IV}
+    
+    \section{Conclusioni}
+    
+    
+    
+    \appendix
+    \section*{Appendices}
+    \addcontentsline{toc}{section}{Appendices}
+    \renewcommand{\thesubsection}{\Alph{subsection}}
+    
+    \subsection{Appendix Subsection}
+    \input{Chapters/ProcedimentoCapacita.tex}
+\end{document}
